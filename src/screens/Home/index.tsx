@@ -1,6 +1,6 @@
 import { HeaderHome } from '@components/HeaderHome';
 
-import { Container, Percent } from './styles';
+import { ButtonAdd, Container, Percent, Subtitle } from './styles';
 
 export function Home() {
     return (
@@ -9,6 +9,14 @@ export function Home() {
             <Percent
                 type="ABOVE"
              value={90.8}/>
+             <Subtitle>
+                Refeições
+             </Subtitle>
+             <ButtonAdd
+                title='Nova Refeição'
+                type='PRIMARY'
+                icon='add'
+             />
         </Container>
     );
 }
