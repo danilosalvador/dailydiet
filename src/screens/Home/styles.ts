@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { PercentButton } from '@components/PercentButton';
+import { ButtonPercent } from '@components/ButtonPercent';
 import { Button } from '@components/Button';
 
 export const Container = styled(SafeAreaView)`
@@ -9,7 +9,7 @@ export const Container = styled(SafeAreaView)`
     padding-right: 20px;
 `;
 
-export const Percent = styled(PercentButton)`
+export const Percent = styled(ButtonPercent)`
     margin-top: 32px;
     margin-bottom: 40px;
 `;

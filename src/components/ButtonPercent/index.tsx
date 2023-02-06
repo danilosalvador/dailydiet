@@ -18,7 +18,7 @@ type Props = TouchableOpacityProps & {
     value: number;
 }
 
-export function PercentButton({ type = 'ABOVE', value, ...rest }: Props) {
+export function ButtonPercent({ type = 'ABOVE', value, ...rest }: Props) {
     return (
         <Container
             type={type}
