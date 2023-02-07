@@ -1,8 +1,16 @@
 import { HeaderHome } from '@components/HeaderHome';
+import { useNavigation } from '@react-navigation/native';
 
 import { ButtonAdd, Container, Percent, Subtitle } from './styles';
 
 export function Home() {
+
+    const navigation = useNavigation();
+
+    function handleOpenNewRegister() {
+        navigation.navigate('register', { id: undefined });
+    }
+
     return (
         <Container>
             <HeaderHome />
@@ -16,6 +24,7 @@ export function Home() {
                 title='Nova Refeição'
                 type='PRIMARY'
                 icon='add'
+                onPress={handleOpenNewRegister}
              />
         </Container>
     );
